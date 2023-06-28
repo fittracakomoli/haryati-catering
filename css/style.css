@@ -3,6 +3,19 @@
   --bg: #010101;
 }
 
+::-webkit-scrollbar-track {
+  background-color: var(--bg);
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  background-color: var(--bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--primary);
+}
+
 html {
   scroll-behavior: smooth;
 }
