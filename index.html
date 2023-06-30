@@ -17,13 +17,16 @@
     <!-- Feather Icons -->
     <script src="https://unpkg.com/feather-icons"></script>
 
+    <!-- Navbar Scroll -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
     <!-- My CSS -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
 
   <body>
     <!-- Navbar Start -->
-    <nav class="navbar">
+    <nav class="navbar" id="navbar">
       <a href="#home" class="navbar-logo">kentucky<span>catering</span></a>
 
       <div class="navbar-nav">
@@ -78,13 +81,19 @@
     </nav>
     <!-- Navbar End -->
 
+    <!-- Floating Button Start -->
+    <div class="floating-button">
+      <a href="https://wa.me/6282247696707" target="_blank"><i data-feather="phone"></i></a>
+    </div>
+    <!-- Floating Button End -->
+
     <!-- Hero Start -->
     <section class="hero" id="home">
       <main class="content">
         <h1 class="main-header">Haryati</h1>
         <h1 class="header">Kentucky Catering</h1>
         <p>Nikmati sensasi cita rasa yang luar biasa ayam goreng kami yang renyah dan gurih, disajikan dengan bumbu rahasia yang menggugah selera.</p>
-        <a href="#" class="cta">Pesan Sekarang!</a>
+        <a href="#products" class="cta">Pesan Sekarang!</a>
       </main>
     </section>
     <!-- Hero End -->
@@ -98,8 +107,11 @@
         </div>
         <div class="content">
           <h3>Kenapa harus memilih kami?</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia tempore similique sit quae adipisci reiciendis!</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore accusantium corporis officia natus corrupti quam deserunt architecto ratione repellendus tempora?</p>
+          <p>Haryati Kentucky Catering sudah bergerak dalam industri kuliner selama kurang lebih 10 tahun. Mulai dari hanya ayam goreng saja, tetapi kini sudah mulai banyak variasi - variasi menu lainnya.</p>
+          <p>
+            Pilih ayam goreng kami karena rasa yang luar biasa. Ayam kami digoreng dengan sempurna, renyah di luar dan juicy di dalam. Bumbu rahasia kami menghadirkan cita rasa yang unik dan memuaskan. Nikmati kenikmatan ayam goreng terbaik
+            hanya dari kami.
+          </p>
         </div>
       </div>
     </section>
@@ -108,7 +120,7 @@
     <!-- Menu Start -->
     <section class="menu" id="menu">
       <h2><span>Menu</span> Kami</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum cumque distinctio animi assumenda enim maiores.</p>
+      <p>Kami menawarkan menu penuh cita rasa dengan hidangan lezat dan beragam yang menggugah selera.</p>
       <div class="row">
         <div class="menu-card">
           <img src="img/menu/1.jpg" alt="Fried  Chicken" class="menu-card-image" />
@@ -142,8 +154,6 @@
     <!-- Product Start -->
     <section class="products" id="products">
       <h2><span>Produk Unggulan</span> Kami</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum cumque distinctio animi assumenda enim maiores.</p>
-
       <div class="row">
         <div class="product-card">
           <div class="product-icons">

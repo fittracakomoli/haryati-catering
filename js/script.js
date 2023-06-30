@@ -7,6 +7,17 @@ document.querySelector("#hamburger-menu").onclick = (e) => {
   e.preventDefault();
 };
 
+// Navbar Scroll
+const nav = document.querySelector(".navbar");
+
+$(window).on("scroll", function () {
+  if ($(window).scrollTop() > 50) {
+    $("nav").addClass("active");
+  } else {
+    $("nav").removeClass("active");
+  }
+});
+
 // Toggle Class Active Search Form
 const searchForm = document.querySelector(".search-form");
 const searchBox = document.querySelector("#search-box");

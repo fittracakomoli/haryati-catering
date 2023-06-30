@@ -41,13 +41,18 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 1.4rem 7%;
-  background-color: rgba(1, 1, 1, 0.9);
+  background-color: rgba(1, 1, 1, 0.3);
   border-bottom: 1px solid #ac4b01;
   position: fixed;
+  transition: 0.5s;
   top: 0;
   left: 0;
   right: 0;
   z-index: 999;
+}
+
+.navbar.active {
+  background-color: rgba(1, 1, 1, 0.9);
 }
 
 .navbar .navbar-logo {
@@ -138,7 +143,7 @@ body {
   top: 100%;
   right: -100%;
   height: 100vh;
-  width: 35rem;
+  width: 25rem;
   padding: 0 1.5rem;
   color: var(--bg);
   background-color: #fff;
@@ -150,22 +155,22 @@ body {
 }
 
 .shopping-cart img {
-  height: 6rem;
+  height: 3rem;
   border-radius: 50%;
 }
 
 .shopping-cart .cart-item {
-  margin: 2rem 0;
+  margin: 1rem 0;
   display: flex;
   align-items: center;
-  gap: 1.5rem;
+  gap: 1rem;
   padding-bottom: 1rem;
   border-bottom: 1px dashed var(--bg);
   position: relative;
 }
 
 .shopping-cart h3 {
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   padding-bottom: 0.5rem;
 }
 
@@ -181,6 +186,32 @@ body {
 
 .shopping-cart .remove-item:hover {
   color: var(--primary);
+}
+
+/* Floating Button */
+.floating-button {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 9999999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.floating-button a {
+  color: #fff;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  background-color: var(--primary);
+  padding: 1.5rem;
+  transition: 0.5s;
+}
+
+.floating-button a:hover {
+  color: var(--primary);
+  background-color: var(--bg);
+  border: 2px solid var(--primary);
 }
 
 /* Hero Section */
@@ -269,7 +300,7 @@ body {
 }
 
 .about .row .about-img {
-  flex: 1 1 45rem;
+  flex: 1 1 40rem;
 }
 
 .about .row .about-img img {
@@ -278,7 +309,7 @@ body {
 
 .about .row .content {
   flex: 1 1 35rem;
-  padding: 0 1rem;
+  padding: 0 3rem;
 }
 
 .about .row .content h3 {
@@ -301,10 +332,11 @@ body {
 
 .menu p {
   text-align: center;
-  max-width: 30rem;
+  max-width: 35rem;
   margin: auto;
   font-weight: 400;
-  line-height: 1.6;
+  font-size: 1.2rem;
+  line-height: 1.4;
 }
 
 .menu .row {
@@ -321,21 +353,22 @@ body {
 
 .menu .row .menu-card img {
   border-radius: 50%;
-  width: 50%;
+  width: 40%;
   border: 5px solid var(--primary);
 }
 
 .menu .row .menu-card .menu-card-title {
+  font-size: 1.6rem;
   margin: 1rem auto 0.5rem;
 }
 
+.menu .row .menu-card .menu-card-price {
+  font-size: 1.6rem;
+}
+
 /* Products Section */
-.products p {
-  text-align: center;
-  max-width: 30rem;
-  margin: auto;
-  font-weight: 400;
-  line-height: 1.6;
+.products h2 {
+  margin-bottom: 3rem;
 }
 
 .products .row {
@@ -599,7 +632,7 @@ footer .credit a:hover {
     top: 100%;
     right: -100%;
     background-color: #fff;
-    width: 30rem;
+    width: 25rem;
     height: 100vh;
     transition: 0.3s;
   }
@@ -613,7 +646,7 @@ footer .credit a:hover {
     display: block;
     margin: 1.5rem;
     padding: 0.5rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 600;
   }
 
